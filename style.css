@@ -1,0 +1,7 @@
+.add-to-cart {
+  transition: background-color 0.2s ease-in-out;
+}
+
+.add-to-cart:hover {
+  background-color: #4c51bf;
+}

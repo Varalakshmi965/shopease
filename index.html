@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ShopEase - Your Online Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-50 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-600">ShopEase</h1>
+      <nav>
+        <ul class="flex space-x-6 text-gray-700">
+          <li><a href="#features" class="hover:text-indigo-600">Features</a></li>
+          <li><a href="#products" class="hover:text-indigo-600">Products</a></li>
+          <li><a href="#contact" class="hover:text-indigo-600">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-indigo-100 py-16">
+    <div class="max-w-6xl mx-auto text-center px-4">
+      <h2 class="text-4xl font-bold mb-4">Discover the Latest Trends</h2>
+      <p class="text-lg text-gray-700 mb-6">Shop the best products from trusted sellers, all in one place.</p>
+      <button class="bg-indigo-600 text-white px-6 py-2 rounded hover:bg-indigo-700">Start Shopping</button>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-semibold mb-10">Why Shop With Us?</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <h4 class="font-bold text-xl">Fast Delivery</h4>
+          <p class="text-gray-600">Get your orders in record time anywhere in the country.</p>
+        </div>
+        <div>
+          <h4 class="font-bold text-xl">Secure Payments</h4>
+          <p class="text-gray-600">Your payment information is safe with end-to-end encryption.</p>
+        </div>
+        <div>
+          <h4 class="font-bold text-xl">24/7 Support</h4>
+          <p class="text-gray-600">Our team is always ready to help you with any issue.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-3xl font-semibold text-center mb-10">Featured Products</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-4 shadow rounded">
+          <img src="https://via.placeholder.com/300x200" alt="Product 1" class="mb-4 w-full">
+          <h4 class="font-bold text-lg">Stylish Watch</h4>
+          <p class="text-gray-600 mb-2">₹1,999</p>
+          <button class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 add-to-cart"
+            data-name="Stylish Watch" data-price="1999">Add to Cart</button>
+        </div>
+        <div class="bg-white p-4 shadow rounded">
+          <img src="https://via.placeholder.com/300x200" alt="Product 2" class="mb-4 w-full">
+          <h4 class="font-bold text-lg">Wireless Earbuds</h4>
+          <p class="text-gray-600 mb-2">₹2,499</p>
+          <button class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 add-to-cart"
+            data-name="Wireless Earbuds" data-price="2499">Add to Cart</button>
+        </div>
+        <div class="bg-white p-4 shadow rounded">
+          <img src="https://via.placeholder.com/300x200" alt="Product 3" class="mb-4 w-full">
+          <h4 class="font-bold text-lg">Smart Backpack</h4>
+          <p class="text-gray-600 mb-2">₹3,199</p>
+          <button class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 add-to-cart"
+            data-name="Smart Backpack" data-price="3199">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-white py-16">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-semibold mb-4">Get in Touch</h3>
+      <p class="text-gray-600 mb-8">Have questions or need support? We're just a message away.</p>
+      <form id="contact-form" class="grid gap-4 md:grid-cols-2 text-left">
+        <input type="text" placeholder="Name" class="p-3 border border-gray-300 rounded">
+        <input type="email" placeholder="Email" class="p-3 border border-gray-300 rounded">
+        <textarea placeholder="Your Message" class="p-3 border border-gray-300 rounded md:col-span-2"></textarea>
+        <button class="bg-indigo-600 text-white px-6 py-3 rounded hover:bg-indigo-700 md:col-span-2">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Shopping Cart -->
+  <section id="cart" class="py-16 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4">
+      <h3 class="text-3xl font-semibold text-center mb-4">Shopping Cart</h3>
+      <ul id="cart-items" class="mb-4 space-y-2 text-gray-700"></ul>
+      <p id="total-price" class="text-xl font-bold text-indigo-600"></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 text-center">
+    <p>&copy; 2025 ShopEase. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
